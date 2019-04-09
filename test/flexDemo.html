@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            box-sizing: border-box;
+        }
+        .container{
+            /*display: flex;*/
+            width: 300px;
+            margin: auto;
+        }
+        .container>.wrapper{
+            margin-top: 10px;
+        }
+        .wrapper{
+            display: flex;
+            flex-flow: row nowrap;
+            height: 30px;
+            width: 300px;
+            margin: auto;
+            background-color: #ccc;
+        }
+        .wrapper>div{
+            flex-grow: 1;
+            border: 1px solid red;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</div>
+</body>
+</html>

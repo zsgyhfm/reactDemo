@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,body,.wapper{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .wapper{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            /*间隔*/
+            grid-column-gap: 10px;
+        }
+        .left{
+            background-color: #ccc;;
+        }
+        .right{
+            background-color: darkseagreen;
+            display: grid;
+            grid-template-rows: 15% 85%;
+        }
+        .top{
+            background-color: saddlebrown;
+        }
+        .main{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<div class="wapper">
+    <div class="left">left</div>
+    <div class="right">
+        <div class="top">top</div>
+        <div class="main">main</div>
+    </div>
+</div>
+</body>
+</html>

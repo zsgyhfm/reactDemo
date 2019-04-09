@@ -1,0 +1,11 @@
+.am-flexbox .am-flexbox-item{
+    margin-left: 1px;
+}
+.placeholder{
+    color: #999999;
+    background-color: #F7F7FA;
+    text-align: center;
+}
+.flag a{
+    color: red;
+}
