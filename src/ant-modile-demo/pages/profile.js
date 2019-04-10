@@ -5,7 +5,7 @@ import {NavBar} from "antd-mobile";
 import {Button, Grid, Paper, withStyles} from '@material-ui/core'
 import "../animate.css"
 import propsType from 'prop-types'
-
+import DocumentTitle from"react-document-title"
 const styles = theme => {
     return ({
         Paper: {
@@ -36,6 +36,9 @@ class Profile extends React.Component {
         const {classes} = this.props
         const {match} = this.props;
         return (
+            <DocumentTitle title="我的">
+
+
             <div>
                 <NavBar>我的</NavBar>
 
@@ -55,6 +58,7 @@ class Profile extends React.Component {
                 </Grid>
                 <Bar flag={this.state.isAction}/>
             </div>
+            </DocumentTitle>
         )
     }
 }

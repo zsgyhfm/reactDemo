@@ -10,12 +10,12 @@ import {BrowserRouter} from 'react-router-dom'
 
 //使用redux
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
+import {createStore,combineReducers} from 'redux'
 //导入reducer
-import Reducer from './redux-demo/Reucer'
+import isLogin from './ant-modile-demo/reducer/'
 
 //将store绑定在provider上
-const store = createStore(Reducer);
+const store = createStore(combineReducers({isLogin}));
 
 
 ReactDOM.render(

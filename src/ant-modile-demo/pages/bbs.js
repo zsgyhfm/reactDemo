@@ -2,7 +2,7 @@ import React from 'react'
 import {withRouter}from'react-router-dom'
 import Bar from '../layout/Flex'
 import {NavBar} from 'antd-mobile'
-
+import DocumentTitle from"react-document-title"
 
 class Bbs extends React.Component{
     constructor(props){
@@ -17,10 +17,12 @@ class Bbs extends React.Component{
 
     render() {
         return(
+            <DocumentTitle title="BBS">
             <div>
                 <NavBar>BBS</NavBar>
                 <Bar flag={this.state.isAction}/>
             </div>
+            </DocumentTitle>
         )
     }
 }
