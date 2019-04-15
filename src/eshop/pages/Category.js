@@ -5,18 +5,7 @@ import DocumentTitle from "react-document-title"
 
 
 class Category extends Component {
-    constructor() {
-        super();
-    }
-    componentWillMount() {
 
-        this.setState({
-            promotionAction:true
-        })
-    }
-    componentWillUnmount() {
-
-    }
 
     render() {
         return (

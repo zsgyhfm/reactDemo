@@ -2,22 +2,20 @@ import "./index.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-// import FlexDemo from './ant-modile-demo/layout/Flex'
 
-import EshopRouter from './eshop/eshaop'
+
+import EshopRouter from './eshop/eshop'
 //使用路由
 import {BrowserRouter} from 'react-router-dom'
 
 //使用redux
 import {Provider} from 'react-redux'
-import {createStore,combineReducers} from 'redux'
+
+import {createStore} from 'redux'
 //导入reducer
-import isLogin from './ant-modile-demo/reducer/'
-
+import rootReducer from './eshop/store/eshopStore'
+const store = createStore(rootReducer);
 //将store绑定在provider上
-const store = createStore(combineReducers({isLogin}));
-
-
 ReactDOM.render(
     <Provider store={store}>
        <BrowserRouter>

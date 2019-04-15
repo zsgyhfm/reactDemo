@@ -2,6 +2,7 @@ import React,{Component,Fragment} from 'react'
 import Tabbar from '../components/Tabbar'
 import {NavBar} from 'antd-mobile'
 import DocumentTitle from "react-document-title"
+import {connect}from 'react-redux'
 //首页
 class Home extends Component{
     constructor() {
@@ -27,4 +28,9 @@ class Home extends Component{
         )
     }
 }
-export default Home
+const isLoginMapToProps = (state)=>{
+    return {
+        isLogin:state.login
+    }
+};
+export default connect(isLoginMapToProps)(Home)
