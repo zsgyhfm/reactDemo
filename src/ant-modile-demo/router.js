@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import News from './pages/News'
 import Profile from './pages/profile'
 import Bbs from './pages/bbs'
+
 class Router1 extends React.Component{
 
     render() {

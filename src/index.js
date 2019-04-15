@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 // import FlexDemo from './ant-modile-demo/layout/Flex'
 
-import Router1 from './ant-modile-demo/router'
+import EshopRouter from './eshop/eshaop'
 //使用路由
 import {BrowserRouter} from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const store = createStore(combineReducers({isLogin}));
 ReactDOM.render(
     <Provider store={store}>
        <BrowserRouter>
-           <Router1/>
+           <EshopRouter/>
        </BrowserRouter>
     </Provider>,
     document.getElementById("root")
