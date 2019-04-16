@@ -10,7 +10,7 @@ body,html{
     background-color: #466B95;
 }
 input{
-    width: 69%;
+    width: 80%;
     height: 42px;
     border: 1px solid #F2F2F2;
     background-color: transparent;
@@ -38,12 +38,11 @@ input:focus{
 }
 .loginForm {
     position: absolute;
-    /*background-color: red;*/
     text-align: center;
-    width: 100%;
-
+    width:100%;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .loginBtn{
     background-color: #F59AD3;
@@ -51,9 +50,14 @@ input:focus{
     border: 1px solid #F59AD3;
     height: 42px;
     border-radius: 23px;
-    width: 31%;
+    width: 80%;
     font-size: 17px;
     color: #fff;
     font-weight: lighter;
-    margin-left: 94px;
+}
+.login-a{
+    color: #fff;
+}
+.login-a:visited{
+    color: #fff;
 }

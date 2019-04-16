@@ -1,11 +1,21 @@
 import React from 'react'
 import {NavBar,Icon} from'antd-mobile'
-
+import styled from 'styled-components'
 import DcouemntTitle from 'react-document-title'
-import login from './login.css'
-
+import  './login.css'
+const Divs = styled.div`
+height: 30px;
+color: #fff;
+display: flex;
+width: 80%;
+margin: 10px auto;
+flex-flow: row nowrap;
+justify-content: space-between;
+padding: 0 10px;
+`;
 class Login extends React.Component{
     handleForm(e){
+        //阻止表单默认动作
         e.preventDefault();
     }
     render() {
@@ -19,7 +29,12 @@ class Login extends React.Component{
                         <input type="text" name={"account"}  placeholder={"用户名"}/>
                         <input type="password" name={"password"} placeholder={"密码"}/><br/>
                         <button className={"loginBtn"}>登陆</button>
+                        <Divs>
+                            <a className={"login-a"} href="#">忘记密码</a>
+                            <a className={"login-a"} href="#">立即注册</a>
+                        </Divs>
                     </form>
+
                 </div>
             </DcouemntTitle>
         )
