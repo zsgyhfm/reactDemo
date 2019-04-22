@@ -1,0 +1,80 @@
+.car{
+    /*background-color: red;*/
+    height: 100%;
+}
+.carList{
+    background-color: #EEEEEE;
+    height: 100%;
+    overflow-y: scroll;
+    padding-bottom:0.62rem;
+
+}
+.goods{
+    width: 1.69rem;
+    height: 1.8rem;
+    float: left;
+}
+.goods img{
+    width: 100%;
+    height: 100%;
+}
+.goodsContent {
+    float: left;
+    width:3.94rem;
+    height: 1.8rem;
+    /*background-color: red;*/
+    padding: 0 7px;
+    font: 0.24rem "Helvetica Neue";
+}
+.goodsContent .title {
+    height: 0.96rem;
+    width: 100%;
+    overflow: hidden;
+}
+.goodsContent .tag {
+    width: 100%;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    overflow: hidden;
+    color: #cccccc;
+}
+.price {
+    height: 0.48rem;
+    width: 100%;
+    overflow: hidden;
+}
+.price .price_num{
+    float: left;
+    color: #DD0707;
+    height: 100%;
+    line-height: 0.7rem;
+    font:0.28rem "Microsoft yahei",Arial
+}
+.price .goodscount {
+    float: right;
+    top: 0;
+}
+
+.goodsSub {
+    width: 0.48rem;
+    height: 0.48rem;
+    display: inline-block;
+    text-align: center;
+}
+.checkIn p{
+    font-size: 0.28rem;
+    line-height: 0.8rem;
+    float: left;
+}
+.checkIn span {
+    color: #DD0707;
+}
+.checkIn button {
+    float: right;
+    height: 100%;
+    width: 1.6rem;
+    border: none;
+    font-size: 0.28rem;
+    background-color: #DD0707;
+    color: #fff;
+}

@@ -6,7 +6,7 @@ class Slider extends React.Component{
     render() {
 
         return (
-            <Carousel showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
+            <Carousel className={"slider"} showStatus={false} showThumbs={false} infiniteLoop={true} autoPlay={true}>
                 <div>
                     <img src={"http://demo.demohuo.top/modals/17/1779/demo/images/1.jpg"} alt={""}/>
                     {/*<p className={"legend"}>Legend 1</p>*/}

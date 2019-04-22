@@ -9,7 +9,7 @@ body,html{
     height: 100%;
     background-color: #466B95;
 }
-input{
+.loginInput{
     width: 80%;
     height: 42px;
     border: 1px solid #F2F2F2;
@@ -21,21 +21,19 @@ input{
     font-size: 17px;
     font-weight: lighter;
 }
-input::-moz-placeholder{
+.loginInput::-moz-placeholder{
     color: #ffffff;
-    padding-left: 30px;
+    /*padding-left: 10px;*/
 }
-input::-ms-input-placeholder{
+.loginInput::-ms-input-placeholder{
     color: #fff;
-    padding-left: 30px;
+    /*padding-left: 10px;*/
 }
-input::-webkit-input-placeholder{
+.loginInput::-webkit-input-placeholder{
     color: #fff;
-    padding-left: 30px;
+    /*padding-left: 10px;*/
 }
-input:focus{
 
-}
 .loginForm {
     position: absolute;
     text-align: center;

@@ -1,0 +1,105 @@
+.profile{
+    background-color: #EFEFF4;
+    height: 100%;
+    padding-bottom: 45px;
+}
+.profile-header{
+    padding:0.44rem 0.24rem 0.44rem 0.54rem;
+    position: relative;
+}
+.profile-head{
+    width:1.36rem;
+    height: 1.36rem;
+    border-radius: 50%;
+    /*background-color: red;*/
+    background: url("http://demo.demohuo.top/modals/17/1779/demo/images/0.jpg") no-repeat center;
+    background-size: cover;
+    float: left;
+}
+
+.profile-info{
+    float: left;
+    /*background-color: red;*/
+    width: 4.26rem;
+    height: 1.36rem;
+    padding-left: 0.24rem;
+    background: url("http://demo.demohuo.top/modals/17/1779/demo/images/right.png") no-repeat 90% center;
+    background-size: 0.2rem 0.3rem;
+    padding-top: 3px;
+}
+.profile-info>p{
+    color: #fff;
+}
+.profile-vip{
+    background-color:#FF3D3D;
+    /*height: 20px;*/
+    /*line-height: 20;*/
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.profile-info p:nth-of-type(2){
+    margin-top: 5px;
+}
+.profile-modify{
+    color: #FF3D3D;
+}
+.profile-info p:nth-of-type(3){
+    margin-top: 5px;
+}
+.profile-step{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 0.96rem;
+    background-color: #3D372C;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+.profile-step>div{
+    flex-grow: 1;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.24rem;
+}
+.profile-step p{
+    margin-top: 3px;
+}
+.profile-cardtitle{
+    height: 1rem;
+    border-bottom: 1px solid #EFEFF4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font: 0.34rem  Helvetica Neue,Helvetica,sans-serif,"Microsoft yahei",Arial;
+    color: #444;
+    background: url("../images/next.png") no-repeat right center;
+    background-size: 15px 15px;
+}
+.profile-cardtitle>span{
+    line-height: 1rem;
+}
+.profile-cardtitle>span:nth-of-type(2){
+    color: #8E8E93;
+    padding-right: 15px;
+}
+.profile-cardtitle img{
+    width: 15px;
+    height: 50px;
+}
+.profile-cardcon{
+ display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding-top: 10px;
+    color: #787878;
+}
+.profile-cardcon >div{
+    flex-grow: 1;
+    text-align: center;
+}
+.profile-cardcon >div>p{
+    margin-top: 8px;
+}

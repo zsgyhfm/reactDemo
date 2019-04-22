@@ -6,6 +6,7 @@ import Cart from './pages/Cart'
 import Profile from './pages/Profile'
 import PrivateRoute from './components/PrivateRoute'
 import Login from "./pages/Login";
+import Search from "./pages/Search"
 
 //导入路由设置
 class Eshop extends React.Component{
@@ -18,9 +19,10 @@ class Eshop extends React.Component{
                         <Route path="/" exact component={Home}/>
                         <Route path="/catergory"  component={Category}/>
                         <Route path="/cart"  component={Cart}/>
-                        {/*<Route path="/profile"  component={Profile}/>*/}
-                        <PrivateRoute path={"/profile"} component={Profile}/>
+                        <Route path="/profile"  component={Profile}/>
+                        {/*<PrivateRoute path={"/profile"} component={Profile}/>*/}
                         <Route path="/login"  component={Login}/>
+                        <Route path="/search"  component={Search}/>
                     </Switch>
                 </Fragment>
 

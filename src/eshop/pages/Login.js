@@ -26,12 +26,12 @@ class Login extends React.Component{
                         ()=>{window.history.go(-1)}
                     } style={{backgroundColor:"transparent"}}>登陆</NavBar>
                     <form className={"loginForm"} method={"post"} onSubmit={this.handleForm.bind(this)}>
-                        <input type="text" name={"account"}  placeholder={"用户名"}/>
-                        <input type="password" name={"password"} placeholder={"密码"}/><br/>
+                        <input className={"loginInput"} type="text" name={"account"}  placeholder={"用户名"}/>
+                        <input className={"loginInput"} type="password" name={"password"} placeholder={"密码"}/><br/>
                         <button className={"loginBtn"}>登陆</button>
                         <Divs>
-                            <a className={"login-a"} href="#">忘记密码</a>
-                            <a className={"login-a"} href="#">立即注册</a>
+                            <a className={"login-a"} href={"javascript:void(0)"}>忘记密码</a>
+                            <a className={"login-a"} href={"javascript:void(0)"}>立即注册</a>
                         </Divs>
                     </form>
 
