@@ -44,7 +44,7 @@
     color: #FF3D3D;
 }
 .profile-info p:nth-of-type(3){
-    margin-top: 5px;
+    margin-top: 0.1rem;
 }
 .profile-step{
     position: absolute;
@@ -56,7 +56,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    padding-top: 10px;
+    padding-top: 0.2rem;
 }
 .profile-step>div{
     flex-grow: 1;
@@ -76,14 +76,14 @@
     font: 0.34rem  Helvetica Neue,Helvetica,sans-serif,"Microsoft yahei",Arial;
     color: #444;
     background: url("../images/next.png") no-repeat right center;
-    background-size: 15px 15px;
+    background-size: 0.3rem 0.3rem;
 }
 .profile-cardtitle>span{
     line-height: 1rem;
 }
 .profile-cardtitle>span:nth-of-type(2){
     color: #8E8E93;
-    padding-right: 15px;
+    padding-right: 0.3rem;
 }
 .profile-cardtitle img{
     width: 15px;
@@ -102,4 +102,28 @@
 }
 .profile-cardcon >div>p{
     margin-top: 8px;
+}
+.profile-icon{
+    float: left;
+    display: block;
+    width: 0.9rem;
+    height: 0.92rem;
+    background: url("../images/list.png") no-repeat center;
+    background-size: 0.3rem 0.3rem;
+
+}
+.profilecell-con{
+    width: 5.2rem;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-right: 0.72rem;
+    background: url("../images/next.png") no-repeat right 0.36rem center;
+    background-size: 0.3rem 0.3rem;
+
+}
+.profilecell-con>span:nth-of-type(2){
+    color: #8e8e93;
 }

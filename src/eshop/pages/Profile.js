@@ -20,7 +20,12 @@ width: 100%;
 padding: 0 0.3rem;
 margin-top: 0.2rem;
 `;
-
+const ProfileCell = styled.div`
+height: 0.92rem;
+background-color:#fff;
+padding: 0 0 0 0.3rem;
+margin-top: 0.2rem;
+`;
 class Profile extends Component {
     constructor() {
         super();
@@ -103,6 +108,16 @@ class Profile extends Component {
                             </div>
                         </div>
                     </Profilecard>
+                    <div>
+
+                    </div>
+                    <ProfileCell>
+                    <span className={"profile-icon"}></span>
+                        <div className={"profilecell-con"}>
+                            <span>全部订单</span>
+                            <span>查看</span>
+                        </div>
+                    </ProfileCell>
                     <Tabbar cur={3}/>
                 </div>
             </DocumentTitle>
