@@ -4,17 +4,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
 <!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/weui/1.1.2/style/weui.min.css" rel="stylesheet">-->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script defer src="js/flexible.js"></script>
+<!--    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--    <script defer src="js/flexible.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    <style>
+        html{
+            font-size: calc(100vw/640*100);
+        }
+    </style>
   <script>
     if ('addEventListener' in document) {
       document.addEventListener('DOMContentLoaded', function () {
         FastClick.attach(document.body);
       }, false);
+    }
+     getDpr();
+    window.onresize=function(){
+        //计算dpr
+        window.location.reload();
+    };
+    function getDpr(){
+        var dpr = window.devicePixelRatio;
+        var html = document.documentElement;
+        html.setAttribute("data-dpr", dpr);
+        var size1=0;
+        //2 . 获取html的font-size
+        if (window.getComputedStyle) {
+            //google firfox支持这种获取内嵌样式    使用style获取的是行内样式
+             size1 = parseFloat(window.getComputedStyle(html).fontSize);
+            html.style.fontSize = size1 + "px";
+            console.log(size1)
+        } else if (html.currentStyle) {
+            //IE是这种获取方式
+             size1 = parseFloat(html.currentStyle.fontSize) * dpr;
+            html.style.fontSize = size1 + "px";
+        }
     }
   </script>
 </head>
@@ -22,5 +51,8 @@
 <body>
   <div id="root"></div>
 </body>
+<script>
 
+
+</script>
 </html>
