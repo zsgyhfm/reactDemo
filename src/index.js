@@ -25,7 +25,7 @@ ReactDOM.render(
                 <EshopRouter/>
             </BrowserRouter>
         </PersistGate>
-    </Provider>
+    </Provider>,
 document.getElementById("root")
 )
 
