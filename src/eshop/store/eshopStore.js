@@ -10,6 +10,7 @@ const persistConfig = {
     storage:storageSession,
     whitelist:["login"]//这里的key要和导入的模块名称一样
 };
+
 const rootReducer =combineReducers({
     login
 });
